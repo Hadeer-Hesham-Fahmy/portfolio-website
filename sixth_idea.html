@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Responsive Card With Hover</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="https://kit.fontawesome.com/dae139fcdf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="menu" ><a id="menuicon" href="menu.html"><i class="fa fa-bars"></i></a></div>
+
+    <div class="constants" id="nav">
+        <nav>
+            <ul>
+                <table>
+                    <tr>
+                        <td id="h">
+                            <li><a href="index14.html"><i class="fa fa-header"></i></a></li>
+                            <span><a><p class="mainly">hadeer</p></a></span>
+                            <span><a><p class="mainly sub">web developer</p></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="index14.html#about_page">about</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="skills.html">my skills</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="index14.html#work">work</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="index14.html#contact">contact</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <li><a id="blog_nav" href="index14.html#blog">blog</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="ex-websites">
+                            <div class="websites">
+                                <li ><a href="https://www.linkedin.com/in/hadeer-hesham-fahmy-45bb671b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li ><a href="https://github.com/Hadeer-Hesham-Fahmy" target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li ><a href="https://m.facebook.com/100014232551273/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+        </nav>
+    </div>
+    <div class="sixth_idea_page">
+    <div class="card">
+        <div class="content ofsixth_idea">
+            <div class="front"><img src="1.jpg"></div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="back">
+            <div class="details">
+                <h2>John Doe<br><span>Senior Designer</span></h2>
+                <div class="social-icons">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <h1>responsive card with hover</h1>
+    </div>
+
+    <div class="codearea">
+        <textarea cols="100" rows="40">
+            <!DOCTYPE html>
+            <html lang="en">
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <!-- here you can include any library of icons you want -->
+                <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+                <script src="https://kit.fontawesome.com/dae139fcdf.js" crossorigin="anonymous"></script>
+                <style>
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+            
+                    body {
+                        background-color: #444;
+                    }
+            
+                    .card1 {
+                        width: 300px;
+                        height: 400px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        /* this property specifies how nested elements are rendered in 3D space */
+                        transform-style: preserve-3d;
+                        /* perspective property gives the lay down effect of the card when you hover  */
+                        perspective: 600px;
+                        transition: 0.5s;
+                        position: absolute;
+                    }
+            
+                    .card1 img {
+                        width: 100%;
+                        height: 100%;
+                    }
+            
+                    .front {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #000;
+                        /* this property defines whether the backface of this div is visible or not */
+                        backface-visibility: hidden;
+                        transform: rotateX(0deg);
+                        transition: 0.5s;
+                    }
+            
+                    .card1:hover .front {
+                        transform: rotateX(-180deg);
+                    }
+            
+                    .back {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: hidden;
+                        transform: rotateX(180deg);
+                        transition: 0.5s;
+                        background: #000;
+                    }
+            
+                    .card1:hover .back {
+                        transform: rotateX(0deg);
+                    }
+            
+                    .back .details {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        padding: 20px;
+                        box-sizing: border-box;
+                        transform: translateY(-50%);
+            
+                    }
+            
+                    .back .details h2 {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 22px;
+                        color: #fff;
+            
+                    }
+            
+                    .back .details h2 span {
+                        color: #a7a7a7;
+                        font-size: 16px;
+                    }
+            
+                    .back .details .social-icons {
+                        padding: 10px 0;
+            
+                    }
+            
+                    .back .details .social-icons i {
+                        color: white;
+                    }
+            
+                    .social-icons a {
+                        display: inline-block;
+                        background: #3e3f46;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin-right: 2px;
+                        color: #fff;
+                        transition: 0.5s;
+                    }
+            
+                    .social-icons a .fa {
+                        line-height: 36px;
+            
+                    }
+            
+                    .social-icons a:hover {
+                        background-color: #e91e63;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <div class="card1">
+                    <div class="front"><img src="1.jpg"></div>
+                    <div class="back">
+                        <div class="details">
+                            <h2>John Doe<br><span>Senior Designer</span></h2>
+                            <div class="social-icons">
+                                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </body>
+            
+            </html>
+        </textarea>
+
+    </div>
+            <script>
+                var decodeEntities = (function() {
+              var cache = {},
+                  character,
+                  e = document.createElement('div');
+              
+              return function(html) {
+                return html.replace(/([&][^&; ]+[;])/g, function(entity) {
+                  character = cache[entity];
+                        if (!character) {
+                    e.innerHTML = entity;
+                    if (e.childNodes[0])
+                      character = cache[entity] = e.childNodes[0].nodeValue;
+                    else
+                      character = '';
+                  }
+                  return character;
+                });
+              };
+            })();
+            
+            document.getElementById('output').value = decodeEntities(document.getElementById('input').value);
+            
+            </script>
+            
+</body>
+</html>
+
+

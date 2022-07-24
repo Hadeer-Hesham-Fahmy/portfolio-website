@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Responsive Text With Hover</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="https://kit.fontawesome.com/dae139fcdf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon1.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="menu" ><a id="menuicon" href="menu.html"><i class="fa fa-bars"></i></a></div>
+    <div class="constants" id="nav">
+        <nav>
+            <ul>
+                <table>
+                    <tr>
+                        <td id="h">
+                            <li><a href="index14.html"><i class="fa fa-header"></i></a></li>
+                            <span><a><p class="mainly">hadeer</p></a></span>
+                            <span><a><p class="mainly sub">web developer</p></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="index14.html#about_page">about</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="skills.html">my skills</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="index14.html#work">work</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li><a href="index14.html#contact">contact</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <li><a id="blog_nav" href="index14.html#blog">blog</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="ex-websites">
+                            <div class="websites">
+                                <li ><a href="https://www.linkedin.com/in/hadeer-hesham-fahmy-45bb671b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li ><a href="https://github.com/Hadeer-Hesham-Fahmy" target="_blank"><i class="fa fa-github"></i></a></li>
+                                <li ><a href="https://m.facebook.com/100014232551273/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+        </nav>
+    </div>
+        <div class="first_idea_page">
+        <div class="card">
+            <div class="content">
+                <h2 class="first_idea"><span>I</span>M<span>POSSIBLE</span></h2>
+            </div>
+                <h1>responsive text with hover</h1>
+        </div>
+
+
+
+
+        <div class="codearea">
+            <textarea cols="100" rows="40">
+                <!DOCTYPE html>
+                <html lang="en">
+                
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                
+                        body {
+                            background-color: #444;
+                            width: 100%;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                
+                        .first_idea {
+                            font-size: 1em;
+                            font-weight: 500;
+                            color: #222;
+                            letter-spacing: 5px;
+                            cursor: pointer;
+                        }
+                
+                        .first_idea span {
+                            transition: 0.5s;
+                        }
+                
+                        /* the :nth-child() enable us to control one letter itself */
+                        .first_idea:hover span:nth-child(1) {
+                            margin-right: 5px;
+                        }
+                
+                        /* the :after add whatever in the content after the letter we defined between the :nth-child() brackets */
+                        .first_idea:hover span:nth-child(1):after {
+                            content: "'";
+                        }
+                
+                        .first_idea:hover span:nth-child(2) {
+                            margin-left: 20px;
+                        }
+                
+                        /* the idea here is the gradual change of the shadow of the text */
+                        .first_idea:hover span {
+                            color: #fff;
+                            text-shadow: 0 0 10px #fff,
+                                0 0 20px #fff,
+                                0 0 40px #fff,
+                                0 0 80px #fff,
+                                0 0 120px #fff,
+                                0 0 160px #fff;
+                        }
+                    </style>
+                </head>
+                
+                <body>
+                    <h2 class="first_idea"><span>I</span>M<span>POSSIBLE</span></h2>
+                </body>
+                
+                </html>
+                </textarea>
+            </div>
+        </div>
+
+<script>
+    var decodeEntities = (function() {
+  var cache = {},
+      character,
+      e = document.createElement('div');
+  
+  return function(html) {
+    return html.replace(/([&][^&; ]+[;])/g, function(entity) {
+      character = cache[entity];
+			if (!character) {
+        e.innerHTML = entity;
+        if (e.childNodes[0])
+          character = cache[entity] = e.childNodes[0].nodeValue;
+        else
+          character = '';
+      }
+      return character;
+    });
+  };
+})();
+
+document.getElementById('output').value = decodeEntities(document.getElementById('input').value);
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
