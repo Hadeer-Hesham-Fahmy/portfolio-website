@@ -2,7 +2,7 @@
 
 - This is (my portfolio website): A website for an online representation of work i have created, as well as my skills.
 Here is the preview video: <a href="https://drive.google.com/file/d/1bnT7qfhJ9dCv1S7GYoHDuj1JaTt8CB-m/view?usp=drivesdk">From Here</a>
-or <a href="https://www.linkedin.com/posts/hadeer-hesham-fahmy-45bb671b8_project-portfoliowebsite-activity-6945016539959959552-oMQ6?utm_source=linkedin_share&utm_medium=android_app"> or Here </a>
+or <a href="https://www.linkedin.com/posts/hadeer-hesham-fahmy-45bb671b8_project-portfoliowebsite-activity-6945016539959959552-oMQ6?utm_source=linkedin_share&utm_medium=android_app"> Here </a>
 
 - Things used in this project:
   1. Pure JavaScript
